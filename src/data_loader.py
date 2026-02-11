@@ -65,11 +65,9 @@ def load_excel_data(filepath: str) -> Dict[str, pd.DataFrame]:
 
     except FileNotFoundError:
         logger.warning(f"⚠️ Arquivo não encontrado: {filepath}. Carregando DADOS MOCKADOS.")
-        st.toast("⚠️ Modo Demonstração: Usando dados fictícios", icon="ℹ️")
         return gerar_dados_mock()
     except Exception as e:
         logger.error(f"❌ Erro ao carregar Excel: {e}")
-        st.error(f"Erro ao carregar dados: {e}")
         return {}
 
 def gerar_dados_mock() -> Dict[str, pd.DataFrame]:
