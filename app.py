@@ -127,8 +127,9 @@ with st.sidebar:
         st.success(f"✅ Conectado")
         st.caption(f"📄 {arquivo_excel.name}")
     else:
-        st.error(TEXTOS['erro_arquivo'])
-        st.stop()
+        st.warning("⚠️ Arquivo não encontrado")
+        st.caption("🔍 Modo Demonstração Ativado")
+        # st.stop() # Removido para permitir modo demo
 
     st.markdown("---")
     
@@ -151,9 +152,16 @@ def carregar_dados(caminho_excel):
     try:
         dados_raw = load_excel_data(caminho_excel)
         
-        df_despesas = clean_despesas(dados_raw['CONTROLE DE DESPESAS'])
-        df_balanco = clean_balanco(dados_raw['BALANCO'])
-        df_pca = clean_pca(dados_raw['PCA 2025']) if 'PCA 2025' in dados_raw else pd.DataFrame()
+        # Verificar se é mock
+        if dados_raw.get('__IS_MOCK__'):
+            df_despesas = dados_raw['CONTROLE DE DESPESAS']
+            df_balanco = dados_raw['BALANCO']
+            df_pca = dados_raw['PCA 2025']
+            logger.info("⚠️ Usando dados mockados (sem limpeza necessária)")
+        else:
+            df_despesas = clean_despesas(dados_raw['CONTROLE DE DESPESAS'])
+            df_balanco = clean_balanco(dados_raw['BALANCO'])
+            df_pca = clean_pca(dados_raw['PCA 2025']) if 'PCA 2025' in dados_raw else pd.DataFrame()
         
         logger.info(f"✅ Dados carregados: {len(df_despesas)} despesas, {len(df_balanco)} fontes")
         
@@ -161,7 +169,8 @@ def carregar_dados(caminho_excel):
             'despesas': df_despesas,
             'balanco': df_balanco,
             'pca': df_pca,
-            'sucesso': True
+            'sucesso': True,
+            'is_mock': dados_raw.get('__IS_MOCK__', False)
         }
     except Exception as e:
         logger.error(f"❌ Erro ao carregar dados: {e}")
@@ -170,8 +179,10 @@ def carregar_dados(caminho_excel):
             'balanco': pd.DataFrame(),
             'pca': pd.DataFrame(),
             'sucesso': False,
-            'erro': str(e)
+            'erro': str(e),
+            'is_mock': False
         }
+
 
 with st.spinner(TEXTOS['aguarde']):
     dados_carregados = carregar_dados(arquivo_excel)
@@ -180,6 +191,10 @@ if not dados_carregados['sucesso']:
     st.error(TEXTOS['erro_carregamento'])
     st.error(f"Detalhes: {dados_carregados.get('erro', 'Erro desconhecido')}")
     st.stop()
+
+# Banner de Modo Demo
+if dados_carregados.get('is_mock'):
+    st.warning("⚠️ **ATENÇÃO: MODO DE DEMONSTRAÇÃO ATIVO** - Os dados apresentados abaixo são FICTÍCIOS e servem apenas para validação visual e de funcionalidades. Nenhuma informação real está sendo exibida.", icon="⚠️")
 
 df_despesas = dados_carregados['despesas']
 df_balanco = dados_carregados['balanco']

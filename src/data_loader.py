@@ -64,11 +64,104 @@ def load_excel_data(filepath: str) -> Dict[str, pd.DataFrame]:
         return dados
 
     except FileNotFoundError:
-        logger.error(f"❌ Arquivo não encontrado: {filepath}")
-        raise FileNotFoundError(f"Arquivo não encontrado: {filepath}")
+        logger.warning(f"⚠️ Arquivo não encontrado: {filepath}. Carregando DADOS MOCKADOS.")
+        st.toast("⚠️ Modo Demonstração: Usando dados fictícios", icon="ℹ️")
+        return gerar_dados_mock()
     except Exception as e:
         logger.error(f"❌ Erro ao carregar Excel: {e}")
-        raise ValueError(f"Erro ao carregar Excel: {e}")
+        st.error(f"Erro ao carregar dados: {e}")
+        return {}
+
+def gerar_dados_mock() -> Dict[str, pd.DataFrame]:
+    """Gera dados fictícios para modo de demonstração."""
+    import numpy as np
+
+    # 1. Mock Despesas
+    logger.info("🔧 Gerando mock de DESPESAS...")
+    data_despesas = {
+        'Processo': [f'2025.000{i:03d}' for i in range(1, 151)],
+        'Objeto': [f'Aquisição de {item}' for item in ['Equipamentos TI', 'Fardamento', 'Combustível', 'Viaturas', 'Material Escritório'] * 30],
+        'Valor': np.random.uniform(1000, 500000, 150),
+        'Fonte': np.random.choice([500, 501, 753, 759, 622], 150),
+        'Elemento': np.random.choice(['CONSUMO', 'PERMANENTE', 'SERVIÇO PJ', 'SERVIÇO PF'], 150),
+        'Status': np.random.choice(['Empenhado', 'Reservado', 'Em análise', 'Cancelado'], 150, p=[0.6, 0.2, 0.15, 0.05]),
+        'Acao_PCA': ['Ação Genérica'] * 150,
+        'Observacao': [''] * 150
+    }
+    df_despesas = pd.DataFrame(data_despesas)
+    
+    # Ajustar status cancelado para valor 0 ou mantê-lo
+    mask_cancelado = df_despesas['Status'] == 'Cancelado'
+    df_despesas.loc[mask_cancelado, 'Valor'] = 0
+
+    # 2. Mock Balanço
+    logger.info("🔧 Gerando mock de BALANÇO...")
+    fontes = [500, 501, 753, 759, 622]
+    # Recursos consistentes para parecer real
+    recursos_base = {500: 15000000, 501: 5000000, 753: 8000000, 759: 3000000, 622: 2000000}
+    
+    dados_balanco = []
+    for fonte in fontes:
+        recursos = recursos_base.get(fonte, 1000000)
+        # Empenhado é a soma das despesas daquela fonte (para consistência básica)
+        empenhado = df_despesas[df_despesas['Fonte'] == fonte]['Valor'].sum()
+        # Dotado um pouco maior que recursos para ter "gordura"
+        dotado = recursos * 1.0
+        
+        dados_balanco.append({
+            'Fonte': fonte,
+            'Recursos': recursos,
+            'Dotado': dotado,
+            'Empenhado': empenhado,
+            'Saldo': recursos - empenhado,
+            'Perc_Execucao': (empenhado / dotado * 100) if dotado > 0 else 0
+        })
+    
+    # Adicionar totais
+    df_balanco = pd.DataFrame(dados_balanco)
+    total = {
+        'Fonte': 'TOTAL',
+        'Recursos': df_balanco['Recursos'].sum(),
+        'Dotado': df_balanco['Dotado'].sum(),
+        'Empenhado': df_balanco['Empenhado'].sum(),
+        'Saldo': df_balanco['Saldo'].sum(),
+        'Perc_Execucao': (df_balanco['Empenhado'].sum() / df_balanco['Dotado'].sum() * 100)
+    }
+    df_balanco = pd.concat([df_balanco, pd.DataFrame([total])], ignore_index=True)
+
+    # 3. Mock PCA
+    logger.info("🔧 Gerando mock de PCA...")
+    data_pca = {
+        'Tipo': ['PCA'] * 50,
+        'Item': range(1, 51),
+        'Classe_Grupo': np.random.choice(['Material', 'Serviço', 'Obra'], 50),
+        'Valor_Estimado': np.random.uniform(5000, 200000, 50),
+        'Dotado': np.zeros(50), # Simplificação
+        'Empenhado': np.zeros(50), # Simplificação
+        'Saldo_Dotacao': np.zeros(50),
+        'Perc_Execucao': np.random.uniform(0, 100, 50)
+    }
+    df_pca = pd.DataFrame(data_pca)
+    # Preencher alguns como concluídos
+    df_pca.loc[:10, 'Perc_Execucao'] = 100
+    df_pca['Empenhado'] = df_pca['Valor_Estimado'] * (df_pca['Perc_Execucao'] / 100)
+
+    # Retornar dicionário com chaves ESPERADAS pelas funções de limpeza
+    # IMPORTANTE: As funções clean_* esperam DataFrames "brutos". 
+    # Como já geramos limpos, vamos bypassar a limpeza no app.py ou
+    # adaptar aqui. Para simplificar, vou alterar o retorno do load_excel_data
+    # para retornar os DFs JÁ LIMPOS quando for mock.
+    # Mas o app.py chama clean_*. Então preciso retornar algo que o app.py entenda.
+    # CORREÇÃO: O app.py chama clean_despesas(dados['CONTROLE DE DESPESAS']).
+    # Então vou retornar os DFs limpos, e no app.py vou verificar se é mock.
+    
+    return {
+        'CONTROLE DE DESPESAS': df_despesas,
+        'BALANCO': df_balanco,
+        'PCA 2025': df_pca,
+        '__IS_MOCK__': True # Flag para indicar que é mock
+    }
+
 
 
 def clean_despesas(df_raw: pd.DataFrame) -> pd.DataFrame:
