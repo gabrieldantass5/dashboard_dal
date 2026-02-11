@@ -376,7 +376,7 @@ def tabela_interativa_despesas(df: pd.DataFrame) -> pd.DataFrame:
     return df_display
 
 
-def aplicar_estilo_tabela(df: pd.DataFrame) -> pd.io.formats.style.Styler:
+def aplicar_estilo_tabela(df: pd.DataFrame):
     """
     Aplica formatação condicional à tabela.
 
