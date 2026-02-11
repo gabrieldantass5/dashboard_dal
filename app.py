@@ -354,7 +354,8 @@ with tab1:
 </div>
 """, unsafe_allow_html=True)
 
-    st.progress(metricas['perc_execucao'] / 100)
+    progresso_val = max(0.0, min(1.0, metricas['perc_execucao'] / 100))
+    st.progress(progresso_val)
 
     st.divider()
 
