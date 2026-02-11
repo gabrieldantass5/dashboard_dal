@@ -1,0 +1,15 @@
+[theme]
+# Tema CBMAL - Light Mode (Paleta Oficial v2.0)
+base = "light"
+primaryColor = "#DC1B13"  # Vermelho CBMAL
+backgroundColor = "#FFFFFF"  # Branco puro
+secondaryBackgroundColor = "#F2F2F2"  # Cinza Base CBMAL
+textColor = "#0F172A"  # Cinza escuro (legibilidade)
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+port = 8501

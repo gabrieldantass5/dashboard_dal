@@ -1,0 +1,15 @@
+# Dashboard de Controle Orçamentário DAL/CBMAL
+# Dependências Python - Versões atualizadas com wheels pré-compilados
+
+# Framework de Dashboard
+streamlit>=1.31.0
+
+# Processamento de Dados
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# Visualizações
+plotly>=5.18.0
+
+# Utilidades (instaladas automaticamente como dependências)
+numpy>=1.24.0

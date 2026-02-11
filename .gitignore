@@ -1,0 +1,62 @@
+# Dashboard Orçamentário DAL - Git Ignore
+
+# Dados sensíveis - NÃO COMMITAR
+data/*.xlsx
+data/*.xls
+*.xlsx
+*.xls
+ORÇAMENTO*.xlsx
+
+# Ambiente virtual Python
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporários
+*.tmp
+*.temp
+~$*.xlsx
+
+# Outputs
+*.csv
+!data/exemplo.csv
+exports/
+relatorios/
+
+# Cache
+.cache/
+*.cache

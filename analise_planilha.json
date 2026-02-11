@@ -1,0 +1,966 @@
+{
+  "PAINEL": {
+    "dimensoes": [
+      21,
+      11
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "Unnamed: 2",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "Unnamed: 9",
+      "Unnamed: 10"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "object",
+      "Unnamed: 1": "float64",
+      "Unnamed: 2": "float64",
+      "Unnamed: 3": "float64",
+      "Unnamed: 4": "float64",
+      "Unnamed: 5": "float64",
+      "Unnamed: 6": "float64",
+      "Unnamed: 7": "float64",
+      "Unnamed: 8": "object",
+      "Unnamed: 9": "float64",
+      "Unnamed: 10": "float64"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 17,
+      "Unnamed: 1": 12,
+      "Unnamed: 2": 12,
+      "Unnamed: 3": 13,
+      "Unnamed: 4": 21,
+      "Unnamed: 5": 20,
+      "Unnamed: 6": 19,
+      "Unnamed: 7": 13,
+      "Unnamed: 8": 16,
+      "Unnamed: 9": 20,
+      "Unnamed: 10": 18
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 2": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 7": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 8": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 9": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 10": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      }
+    }
+  },
+  "CONTROLE DE DESPESAS": {
+    "dimensoes": [
+      303,
+      9
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "CONTROLE DE DESPESAS 2025",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "object",
+      "Unnamed: 1": "object",
+      "CONTROLE DE DESPESAS 2025": "object",
+      "Unnamed: 3": "object",
+      "Unnamed: 4": "object",
+      "Unnamed: 5": "object",
+      "Unnamed: 6": "object",
+      "Unnamed: 7": "object",
+      "Unnamed: 8": "object"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 24,
+      "Unnamed: 1": 23,
+      "CONTROLE DE DESPESAS 2025": 23,
+      "Unnamed: 3": 23,
+      "Unnamed: 4": 23,
+      "Unnamed: 5": 1,
+      "Unnamed: 6": 1,
+      "Unnamed: 7": 23,
+      "Unnamed: 8": 270
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": "NÚMERO DO PROCESSO",
+        "2": "E:01203.0000000498/2025"
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": "OBJETO",
+        "2": "Água mineral"
+      },
+      "CONTROLE DE DESPESAS 2025": {
+        "0": NaN,
+        "1": "VALOR",
+        "2": 32709
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": "FONTE",
+        "2": 500
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": "ELEMENTO DE DESPESA",
+        "2": "CONSUMO"
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": "NOTA DE RESERVA",
+        "2": false
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": "NOTA DE \nEMPENHO",
+        "2": true
+      },
+      "Unnamed: 7": {
+        "0": NaN,
+        "1": "AÇÃO DO PCA2025",
+        "2": "Expediente, limpeza, aprovisionamento "
+      },
+      "Unnamed: 8": {
+        "0": NaN,
+        "1": "OBSERVAÇÃO",
+        "2": NaN
+      }
+    }
+  },
+  "BALANCO": {
+    "dimensoes": [
+      67,
+      15
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "MODERNIZAÇÃO DO ÓRGÃO",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "Unnamed: 9",
+      "Unnamed: 10",
+      "Unnamed: 11",
+      "Unnamed: 12",
+      "Unnamed: 13",
+      "Unnamed: 14"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "object",
+      "Unnamed: 1": "object",
+      "MODERNIZAÇÃO DO ÓRGÃO": "object",
+      "Unnamed: 3": "object",
+      "Unnamed: 4": "object",
+      "Unnamed: 5": "object",
+      "Unnamed: 6": "object",
+      "Unnamed: 7": "object",
+      "Unnamed: 8": "object",
+      "Unnamed: 9": "float64",
+      "Unnamed: 10": "float64",
+      "Unnamed: 11": "float64",
+      "Unnamed: 12": "float64",
+      "Unnamed: 13": "float64",
+      "Unnamed: 14": "float64"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 25,
+      "Unnamed: 1": 13,
+      "MODERNIZAÇÃO DO ÓRGÃO": 11,
+      "Unnamed: 3": 11,
+      "Unnamed: 4": 8,
+      "Unnamed: 5": 18,
+      "Unnamed: 6": 18,
+      "Unnamed: 7": 37,
+      "Unnamed: 8": 51,
+      "Unnamed: 9": 65,
+      "Unnamed: 10": 65,
+      "Unnamed: 11": 65,
+      "Unnamed: 12": 65,
+      "Unnamed: 13": 65,
+      "Unnamed: 14": 65
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": NaN,
+        "2": "SALDOS"
+      },
+      "MODERNIZAÇÃO DO ÓRGÃO": {
+        "0": NaN,
+        "1": NaN,
+        "2": "500"
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": NaN,
+        "2": "753"
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": NaN,
+        "2": "759"
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": NaN,
+        "2": "622"
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": NaN,
+        "2": "501"
+      },
+      "Unnamed: 7": {
+        "0": NaN,
+        "1": NaN,
+        "2": "SOMATÓRIO"
+      },
+      "Unnamed: 8": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 9": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 10": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 11": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 12": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 13": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 14": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      }
+    }
+  },
+  "RECURSOS MODERNIZAÇÃO 2025": {
+    "dimensoes": [
+      43,
+      13
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "AÇÃO MODERNIZAÇÃO DO ÓRGÃO",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "Unnamed: 9",
+      "Unnamed: 10",
+      "Unnamed: 11",
+      "Unnamed: 12"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "object",
+      "Unnamed: 1": "object",
+      "AÇÃO MODERNIZAÇÃO DO ÓRGÃO": "object",
+      "Unnamed: 3": "object",
+      "Unnamed: 4": "object",
+      "Unnamed: 5": "object",
+      "Unnamed: 6": "object",
+      "Unnamed: 7": "object",
+      "Unnamed: 8": "object",
+      "Unnamed: 9": "object",
+      "Unnamed: 10": "object",
+      "Unnamed: 11": "object",
+      "Unnamed: 12": "object"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 36,
+      "Unnamed: 1": 26,
+      "AÇÃO MODERNIZAÇÃO DO ÓRGÃO": 10,
+      "Unnamed: 3": 16,
+      "Unnamed: 4": 16,
+      "Unnamed: 5": 19,
+      "Unnamed: 6": 25,
+      "Unnamed: 7": 36,
+      "Unnamed: 8": 36,
+      "Unnamed: 9": 35,
+      "Unnamed: 10": 36,
+      "Unnamed: 11": 36,
+      "Unnamed: 12": 35
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": "TOTAL DE RECURSOS\n(LOA + SUPERAVIT +CRED SUP)",
+        "2": NaN
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": "VALOR TOTAL",
+        "2": "Material permanente"
+      },
+      "AÇÃO MODERNIZAÇÃO DO ÓRGÃO": {
+        "0": NaN,
+        "1": "753 -   TAXAS ",
+        "2": 3700000
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": "759 -  FUNDOS",
+        "2": 1100000
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": "622 - SUS",
+        "2": 0
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": "501 - DREM",
+        "2": 700000
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 7": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 8": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 9": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 10": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 11": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 12": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      }
+    }
+  },
+  "AUX BALANCO": {
+    "dimensoes": [
+      38,
+      4
+    ],
+    "colunas": [
+      500,
+      "DOTADO SEM RESERVA",
+      "DOTADO COM RESERVA",
+      "EMPENHADO"
+    ],
+    "tipos_dados": {
+      "500": "object",
+      "DOTADO SEM RESERVA": "object",
+      "DOTADO COM RESERVA": "object",
+      "EMPENHADO": "object"
+    },
+    "valores_nulos": {
+      "500": 4,
+      "DOTADO SEM RESERVA": 4,
+      "DOTADO COM RESERVA": 4,
+      "EMPENHADO": 4
+    },
+    "amostra": {
+      "500": {
+        "0": "PERMANENTE",
+        "1": "CONSUMO",
+        "2": "SERVIÇO PF"
+      },
+      "DOTADO SEM RESERVA": {
+        "0": 258394,
+        "1": 2421939.46,
+        "2": 429460
+      },
+      "DOTADO COM RESERVA": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      },
+      "EMPENHADO": {
+        "0": 258394,
+        "1": 2421939.46,
+        "2": 429460
+      }
+    }
+  },
+  "RECURSOS TESOURO 2025": {
+    "dimensoes": [
+      28,
+      9
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "TESOURO: FONTE 500",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "object",
+      "Unnamed: 1": "object",
+      "TESOURO: FONTE 500": "object",
+      "Unnamed: 3": "object",
+      "Unnamed: 4": "float64",
+      "Unnamed: 5": "object",
+      "Unnamed: 6": "object",
+      "Unnamed: 7": "object",
+      "Unnamed: 8": "object"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 14,
+      "Unnamed: 1": 8,
+      "TESOURO: FONTE 500": 8,
+      "Unnamed: 3": 15,
+      "Unnamed: 4": 22,
+      "Unnamed: 5": 9,
+      "Unnamed: 6": 20,
+      "Unnamed: 7": 9,
+      "Unnamed: 8": 15
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": NaN,
+        "2": "LOA"
+      },
+      "TESOURO: FONTE 500": {
+        "0": NaN,
+        "1": NaN,
+        "2": "CRED SUPLEMENTAR"
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": NaN,
+        "2": "TOTAL"
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": NaN,
+        "2": "MES"
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": "APORTES MENSAIS",
+        "2": "VALOR"
+      },
+      "Unnamed: 7": {
+        "0": NaN,
+        "1": NaN,
+        "2": "SALDO LOA"
+      },
+      "Unnamed: 8": {
+        "0": NaN,
+        "1": NaN,
+        "2": "SALDO \n(LOA + SUP)"
+      }
+    }
+  },
+  "PCA 2025": {
+    "dimensoes": [
+      43,
+      8
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "PCA 2025",
+      "Unnamed: 3",
+      "DESEMPENHO PCA 2025",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "object",
+      "Unnamed: 1": "object",
+      "PCA 2025": "object",
+      "Unnamed: 3": "object",
+      "DESEMPENHO PCA 2025": "object",
+      "Unnamed: 5": "object",
+      "Unnamed: 6": "object",
+      "Unnamed: 7": "object"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 1,
+      "Unnamed: 1": 1,
+      "PCA 2025": 1,
+      "Unnamed: 3": 1,
+      "DESEMPENHO PCA 2025": 1,
+      "Unnamed: 5": 1,
+      "Unnamed: 6": 1,
+      "Unnamed: 7": 1
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": "TIPO",
+        "2": "Material"
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": "ITEM",
+        "2": 4
+      },
+      "PCA 2025": {
+        "0": NaN,
+        "1": "CLASSE/GRUPO",
+        "2": "Audiovisual "
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": "VALOR TOTAL ESTIMADO",
+        "2": 10550
+      },
+      "DESEMPENHO PCA 2025": {
+        "0": NaN,
+        "1": "DOTADO",
+        "2": 0
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": "EMPENHADO",
+        "2": 0
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": "SALDO PARA DOTAÇÃO",
+        "2": 10550
+      },
+      "Unnamed: 7": {
+        "0": NaN,
+        "1": "PERCENTUAL DE EXECUÇÃO",
+        "2": 0
+      }
+    }
+  },
+  "GRÁFICOS DE ACOMPANHAMENTO": {
+    "dimensoes": [
+      0,
+      0
+    ],
+    "colunas": [],
+    "tipos_dados": {},
+    "valores_nulos": {},
+    "amostra": {}
+  },
+  "Página10": {
+    "dimensoes": [
+      9,
+      10
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "Unnamed: 2",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "Unnamed: 9"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "float64",
+      "Unnamed: 1": "float64",
+      "Unnamed: 2": "float64",
+      "Unnamed: 3": "float64",
+      "Unnamed: 4": "float64",
+      "Unnamed: 5": "float64",
+      "Unnamed: 6": "object",
+      "Unnamed: 7": "object",
+      "Unnamed: 8": "object",
+      "Unnamed: 9": "object"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 9,
+      "Unnamed: 1": 3,
+      "Unnamed: 2": 3,
+      "Unnamed: 3": 3,
+      "Unnamed: 4": 3,
+      "Unnamed: 5": 9,
+      "Unnamed: 6": 5,
+      "Unnamed: 7": 4,
+      "Unnamed: 8": 4,
+      "Unnamed: 9": 4
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": 14601314.0,
+        "2": 3765438.0300000003
+      },
+      "Unnamed: 2": {
+        "0": NaN,
+        "1": 2537782.0,
+        "2": 1520000.0
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": 1717749.0,
+        "2": 490026.56
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": 2880926.0,
+        "2": 1520000.0
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": "FONTE 500",
+        "2": "FONTE 753"
+      },
+      "Unnamed: 7": {
+        "0": "TOTAL PREVISTO NO ORÇAMENTO",
+        "1": 15911610,
+        "2": 5260154.46
+      },
+      "Unnamed: 8": {
+        "0": "VALOR DOTADO",
+        "1": 15900724.68,
+        "2": 4819755.74
+      },
+      "Unnamed: 9": {
+        "0": "VALOR EMPENHADO",
+        "1": 15899799.31,
+        "2": 3802009.49
+      }
+    }
+  },
+  "RELATÓRIO": {
+    "dimensoes": [
+      39,
+      7
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "Unnamed: 2",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "TESOURO"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "float64",
+      "Unnamed: 1": "float64",
+      "Unnamed: 2": "float64",
+      "Unnamed: 3": "float64",
+      "Unnamed: 4": "float64",
+      "Unnamed: 5": "float64",
+      "TESOURO": "object"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 39,
+      "Unnamed: 1": 39,
+      "Unnamed: 2": 39,
+      "Unnamed: 3": 39,
+      "Unnamed: 4": 39,
+      "Unnamed: 5": 39,
+      "TESOURO": 38
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 2": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "TESOURO": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      }
+    }
+  },
+  "CONTROLE": {
+    "dimensoes": [
+      7,
+      11
+    ],
+    "colunas": [
+      "Unnamed: 0",
+      "Unnamed: 1",
+      "Unnamed: 2",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "Unnamed: 9",
+      "Unnamed: 10"
+    ],
+    "tipos_dados": {
+      "Unnamed: 0": "float64",
+      "Unnamed: 1": "float64",
+      "Unnamed: 2": "object",
+      "Unnamed: 3": "float64",
+      "Unnamed: 4": "float64",
+      "Unnamed: 5": "object",
+      "Unnamed: 6": "float64",
+      "Unnamed: 7": "object",
+      "Unnamed: 8": "float64",
+      "Unnamed: 9": "float64",
+      "Unnamed: 10": "object"
+    },
+    "valores_nulos": {
+      "Unnamed: 0": 7,
+      "Unnamed: 1": 7,
+      "Unnamed: 2": 1,
+      "Unnamed: 3": 7,
+      "Unnamed: 4": 7,
+      "Unnamed: 5": 1,
+      "Unnamed: 6": 7,
+      "Unnamed: 7": 3,
+      "Unnamed: 8": 7,
+      "Unnamed: 9": 7,
+      "Unnamed: 10": 4
+    },
+    "amostra": {
+      "Unnamed: 0": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 1": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 2": {
+        "0": NaN,
+        "1": "FONTE",
+        "2": 500
+      },
+      "Unnamed: 3": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 4": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 5": {
+        "0": NaN,
+        "1": "CLASSIFICAÇÃO",
+        "2": "PERMANENTE"
+      },
+      "Unnamed: 6": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 7": {
+        "0": NaN,
+        "1": "ORIGEM DO RECURSO",
+        "2": "LOA"
+      },
+      "Unnamed: 8": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 9": {
+        "0": NaN,
+        "1": NaN,
+        "2": NaN
+      },
+      "Unnamed: 10": {
+        "0": NaN,
+        "1": "NOTA DE RESERVA",
+        "2": "SIM"
+      }
+    }
+  },
+  "Despesas 2025": {
+    "dimensoes": [
+      28,
+      3
+    ],
+    "colunas": [
+      "DESPESAS 2025",
+      "Unnamed: 1",
+      "Unnamed: 2"
+    ],
+    "tipos_dados": {
+      "DESPESAS 2025": "object",
+      "Unnamed: 1": "object",
+      "Unnamed: 2": "object"
+    },
+    "valores_nulos": {
+      "DESPESAS 2025": 0,
+      "Unnamed: 1": 0,
+      "Unnamed: 2": 2
+    },
+    "amostra": {
+      "DESPESAS 2025": {
+        "0": "TIPO",
+        "1": "LOCADORAS",
+        "2": "EQUATORIAL"
+      },
+      "Unnamed: 1": {
+        "0": "MENSAL",
+        "1": 161000,
+        "2": 68000
+      },
+      "Unnamed: 2": {
+        "0": "ANUAL",
+        "1": 1932000,
+        "2": 816000
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+Segue **lista consolidada e objetiva** com todas as informações necessárias para estruturar um **dashboard estratégico da SAC**, contemplando gestão de demandas, fluxos, planejamento, conformidade e execução contratual.
+
+---
+
+## 1. IDENTIFICAÇÃO DO PROCESSO
+
+* Número do Processo SEI
+* Tipo de Contratação (Dispensa, SRP AMGESP, SRP Federal, Adesão, Licitação, Adiantamento)
+* Objeto Resumido
+* Unidade Demandante
+* Gestor Responsável
+* Setor Instrutor (SAC, SSAC, SSPP, SSRP, CPL etc.)
+
+---
+
+## 2. CONTROLE DE FLUXO PROCESSUAL
+
+* Fluxo Aplicável (ex.: SAC → DAL → DF → GCG)
+* Etapa Atual
+* Unidade Atual
+* Responsável pela Etapa
+* Data de Entrada na Etapa
+* Prazo Previsto
+* Dias em Tramitação
+* Próximo Encaminhamento
+* Status (regular, em atraso, pendente de informação, aguardando autorização)
+
+---
+
+## 3. PLANEJAMENTO (PCA)
+
+* Exercício do PCA
+* Número do Item no PCA
+* Modalidade Planejada
+* Valor Previsto no PCA
+* Situação (não iniciado, em instrução, contratado, cancelado)
+* Desvio de Valor (previsto x executado)
+
+---
+
+## 4. ORÇAMENTO E FINANÇAS
+
+* Fonte de Recurso
+* Dotação Orçamentária
+* Valor Estimado
+* Valor Contratado
+* Empenho Emitido (sim ou não)
+* Número do Empenho
+* Valor Empenhado
+* Saldo Orçamentário
+* Situação na DF
+
+---
+
+## 5. CONTROLE DE DISPENSAS (LIMITE LEGAL)
+
+* Fundamento Legal
+* Valor Individual
+* Valor Acumulado no Exercício por UG
+* Limite Legal Aplicável
+* Indicador de Risco de Fracionamento
+
+---
+
+## 6. SISTEMA DE REGISTRO DE PREÇOS (SRP)
+
+* Origem da Ata (AMGESP, Federal etc.)
+* Número da ARP
+* Vigência Inicial e Final
+* Item da Ata
+* Quantidade Total
+* Quantidade Utilizada
+* Saldo Disponível
+* Processo SEI Vinculado
+
+---
+
+## 7. CONTRATOS E EXECUÇÃO
+
+* Número do Contrato
+* Empresa Contratada
+* CNPJ
+* Valor Global
+* Vigência
+* Gestor do Contrato
+* Fiscal do Contrato
+* Situação da Execução
+* Pagamentos Realizados
+* Necessidade de Aditivo
+
+---
+
+## 8. ADIANTAMENTO DE NUMERÁRIO
+
+* Servidor Responsável
+* Valor Concedido
+* Finalidade
+* Data de Liberação
+* Prazo de Aplicação
+* Prazo de Prestação de Contas
+* Situação da Prestação de Contas
+
+---
+
+## 9. CLASSIFICAÇÕES E CONFORMIDADE TÉCNICA
+
+* Código da UASG
+* Código CATMAT ou CATSER
+* Descrição Oficial do Item
+* CNAE do Fornecedor
+* Compatibilidade CNAE x Objeto
+* Validação Técnica (sim ou não)
+
+---
+
+## 10. INDICADORES GERENCIAIS (KPIs PARA DASHBOARD)
+
+* Total de Processos em Tramitação
+* Processos por Etapa
+* Processos em Atraso
+* Tempo Médio por Etapa
+* Valor Total em Instrução
+* Valor Total Contratado no Exercício
+* Execução do PCA (%)
+* Saldo de Atas Vigentes
+* Dispensas no Limite Crítico
+* Contratos Próximos do Vencimento
+
+---
+
+## 11. CONTROLE DE RISCOS
+
+* Processo com Pendência Jurídica
+* Processo Devolvido para Ajuste
+* Risco de Perda de Vigência de Ata
+* Risco de Perda de Prazo Orçamentário
+* Risco de Incompatibilidade CNAE/CATMAT
+
+---
+
+Essa estrutura permite que o dashboard da SAC apresente:
+
+* Visão operacional diária
+* Controle de fluxo em tempo real
+* Monitoramento orçamentário
+* Conformidade técnica
+* Gestão de riscos
+* Indicadores estratégicos para tomada de decisão

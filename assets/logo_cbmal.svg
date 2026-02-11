@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Escudo base -->
+  <path d="M100,20 L160,50 L160,120 Q160,160 100,180 Q40,160 40,120 L40,50 Z"
+        fill="#DC1B13" stroke="#B22222" stroke-width="2"/>
+
+  <!-- Cruz branca (símbolo médico) -->
+  <rect x="90" y="60" width="20" height="80" fill="white" rx="2"/>
+  <rect x="60" y="90" width="80" height="20" fill="white" rx="2"/>
+
+  <!-- Detalhe azul (acento CBMAL) -->
+  <circle cx="100" cy="100" r="12" fill="#4C7695" stroke="white" stroke-width="2"/>
+
+  <!-- Texto CBMAL -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="24"
+        font-weight="bold" fill="white" text-anchor="middle">CBMAL</text>
+</svg>

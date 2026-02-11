@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c:*)",
+      "WebSearch",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:docs.kanaries.net)",
+      "Bash(python -m venv:*)",
+      "Bash(venv/Scripts/pip install:*)",
+      "Bash(venv/Scripts/python.exe -m pip:*)",
+      "Bash(move \"ORÇAMENTO 2025 \\(1\\).xlsx\" \"data/ORÇAMENTO 2025 \\(1\\).xlsx\")",
+      "Bash(venv/Scripts/streamlit run app.py)",
+      "Bash(venv/Scripts/streamlit run app.py --server.headless=true)",
+      "Bash(curl:*)",
+      "Bash(venv/Scripts/streamlit run:*)",
+      "Bash(ls:*)",
+      "Bash(dir:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(timeout 3 tail:*)",
+      "Bash(timeout 5 tail:*)"
+    ]
+  }
+}
