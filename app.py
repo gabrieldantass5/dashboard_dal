@@ -362,35 +362,6 @@ with tab1:
 </div>
 """, unsafe_allow_html=True)
 
-    # Barra de progresso estilizada
-    st.markdown("---")
-    st.markdown("#### 📊 Progresso de Execução Orçamentária")
-
-    col_prog1, col_prog2, col_prog3 = st.columns([1, 6, 1])
-
-    with col_prog1:
-        st.caption("**Início**")
-        st.caption("0%")
-
-    with col_prog2:
-        taxa_exec = metricas['perc_execucao']
-        progresso_val = max(0.0, min(1.0, taxa_exec / 100))
-        st.progress(progresso_val)
-
-        # Mensagem adaptada ao status
-        if taxa_exec > 100:
-            excesso = taxa_exec - 100
-            st.error(f"⚠️ **{formatar_percentual(taxa_exec)}** - Orçamento Sobregastado em {formatar_percentual(excesso)}")
-        elif taxa_exec >= 90:
-            st.warning(f"🟠 **{formatar_percentual(taxa_exec)}** - Aproximando do limite orçamentário")
-        else:
-            st.success(f"✅ **{formatar_percentual(taxa_exec)}** do orçamento executado")
-
-    with col_prog3:
-        st.caption("**Meta**")
-        st.caption("100%")
-
-    st.divider()
 
     # Resumo rápido de alertas
     df_projecoes_geral = calcular_projecoes_esgotamento(df_balanco, df_despesas)
