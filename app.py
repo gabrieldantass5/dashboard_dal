@@ -140,6 +140,14 @@ with st.sidebar:
     
     st.markdown("---")
     
+    # Botão para limpar cache
+    if st.button("🔄 Limpar Cache", help="Limpa o cache do dashboard para resolver erros de carregamento"):
+        st.cache_data.clear()
+        st.success("✅ Cache limpo! Recarregando...")
+        st.rerun()
+    
+    st.markdown("---")
+    
     st.info("💡 **Dica:** Cada aba possui filtros específicos para análise focada")
 
 # =============================================================================
@@ -354,8 +362,24 @@ with tab1:
 </div>
 """, unsafe_allow_html=True)
 
-    progresso_val = max(0.0, min(1.0, metricas['perc_execucao'] / 100))
-    st.progress(progresso_val)
+    # Barra de progresso estilizada
+    st.markdown("---")
+    st.markdown("#### 📊 Progresso de Execução Orçamentária")
+    
+    col_prog1, col_prog2, col_prog3 = st.columns([1, 6, 1])
+    
+    with col_prog1:
+        st.caption("**Início**")
+        st.caption("0%")
+    
+    with col_prog2:
+        progresso_val = max(0.0, min(1.0, metricas['perc_execucao'] / 100))
+        st.progress(progresso_val)
+        st.caption(f"**{formatar_percentual(metricas['perc_execucao'])}** do orçamento executado")
+    
+    with col_prog3:
+        st.caption("**Meta**")
+        st.caption("100%")
 
     st.divider()
 
